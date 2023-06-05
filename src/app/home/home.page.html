@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Usuários</ion-title>
+    <ion-buttons slot="start"></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h1>Listagem de Usuários</h1>
+    <table border="1" style="width: 100%">
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Data de Nascimento</th>
+        <th>Avatar</th>
+        <th>Ação</th>
+      </tr>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.telefone }}</td>
+        <td>{{ usuario.datanasc }}</td>
+        <td>
+          <ion-avatar class="avatar">
+            <img src="{{ usuario.avatar }}" />
+          </ion-avatar>
+        </td>
+        <td><ion-button (click)="onClickUpdate()" color="warning">Editar</ion-button> | <ion-button (click)="onClickDelete()" color="danger">Remover</ion-button></td>
+      </tr>
+    </table>
+    <ion-button (click)="onClickPost()" size="small">Novo Usuário</ion-button>
+  </div>
+</ion-content>

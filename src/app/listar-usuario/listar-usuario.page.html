@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic App
+    </ion-title>
+    <ion-button [routerLink]="['/add-usuario']" slot="end">
+      <ion-icon  size="small" name="person-add-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ios list-ios hydrated">
+    <ion-list-header class="ios hydrated">
+      Lista de Usuários
+    </ion-list-header>
+    <ion-item *ngFor="let usuario of usuarios" class="user-list">
+      <ion-label>
+        <h5>
+          <ion-icon name="person"></ion-icon> {{usuario.nome}}
+        </h5>
+      </ion-label>
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/update-usuario',usuario.id]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear [routerLink]="['/delete-usuario',usuario.id]">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear [routerLink]="['/detail-usuario',usuario.id]">
+          <ion-icon name="eye" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

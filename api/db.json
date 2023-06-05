@@ -1,0 +1,36 @@
+{
+  "usuarios": [
+    {
+      "nome": "Márcio Diego Lima",
+      "email": "marcio.lima@gmail.com",
+      "telefone": 83997779836,
+      "datanasc": "1991-03-29",
+      "avatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "id": 1
+    },
+    {
+      "nome": "Joaquim Tiago Jesus",
+      "email": "joaquim.jesus@gmail.com",
+      "telefone": 83999072480,
+      "datanasc": "1993-01-18",
+      "avatar": "https://avatars.githubusercontent.com/u/7?v=4",
+      "id": 2
+    },
+    {
+      "nome": "Antonio César Manoel Peixoto",
+      "email": "antonio.peixoto@gmail.com",
+      "telefone": 83989784874,
+      "datanasc": "1990-02-04",
+      "avatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "id": 3
+    },
+    {
+      "nome": "Alaniel Guedes do Nascimento",
+      "email": "alaniel.nascimento@maisunifacisa.com.br",
+      "telefone": 83987833217,
+      "datanasc": "1990-11-16",
+      "avatar": "https://ionicframework.com/docs/img/demos/avatar.svg",
+      "id": 4
+    }
+  ]
+}

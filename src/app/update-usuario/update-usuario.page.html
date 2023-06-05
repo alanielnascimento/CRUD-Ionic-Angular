@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Atualizar Usuário
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" name="txNome" [(ngModel)]="usuario.nome" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" name="txEmail" [(ngModel)]="usuario.email" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="number" name="telefone"  [(ngModel)]="usuario.telefone" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating"></ion-label>
+      <ion-input type="date" name="txData" [(ngModel)]="usuario.datanasc" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating"></ion-label>
+      <ion-input type="text" name="txAvatar" [(ngModel)]="usuario.avatar" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="updateUsuario()" expand="block" color="success">Atualizar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>
